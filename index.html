@@ -7,79 +7,97 @@
     <meta name="description" content="Виталий Веб-разработчик" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <title>web-разработчик</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="avatar">
-      <img src="I_.jpg" alt="I" width="200" />
+
+  <body id="body">
+    <div class="info">
+      <img src="I_.jpg" alt="I" class="avatar" />
+
+      <div class="infoText">
+        <h1>Виталий Шилюк</h1>
+
+        <p>Я веб-разработчик</p>
+
+        <p>
+          Я изучаю <strong>CSS и JavaScript,</strong> потому что
+          <em>хочу строить свою карьеру в IT</em>. Мне нравится создавать
+          красивые, удобные сайты и видеть, как мой код превращается в
+          работающие проекты. Я учусь каждый день и верю, что упорство,
+          дисциплина и желание развиваться приведут меня к большим результатам.
+          <strong
+            >Я готов расти и брать на себя новые задачи, чтобы становиться лучше
+            в своём деле.</strong
+          >
+        </p>
+
+        <h3>Мои социальные сети</h3>
+        <a href="https://t.me/PipeHash" target="_blank">Telegram</a>
+        |
+        <a href="https://www.instagram.com/thevitalli/" target="_blank"
+          >Instagram</a
+        >
+      </div>
     </div>
-    <h1>Виталий Шилюк</h1>
-    <p>Я веб-разработчик</p>
-    <p>
-      Я изучаю <strong>CSS и JavaScript,</strong> потому что
-      <em>хочу строить свою карьеру в IT</em>. Мне нравится создавать красивые,
-      удобные сайты и видеть, как мой код превращается в работающие проекты. Я
-      учусь каждый день и верю, что упорство, дисциплина и желание развиваться
-      приведут меня к большим результатам.
-      <strong
-        >Я готов расти и брать на себя новые задачи, чтобы становиться лучше в
-        своём деле.</strong
-      >
-    </p>
-
-    <hr />
-
-    <h2>Мои социальные сети</h2>
-    <a href="https://t.me/PipeHash" target="_blank">Telegram</a>
     <br />
-    <a href="https://www.instagram.com/thevitalli/" target="_blank"
-      >Instagram</a
-    >
 
-    <hr />
+    <div class="card1">
+      <h2>Мои хобби</h2>
+      <ol class="list">
+        <li>MMA</li>
+        <li>Писать код</li>
+        <li>Слушать подкасты</li>
+        <li>Смотреть бои</li>
+        <li>CS2</li>
+      </ol>
+    </div>
 
-    <h2>Таблица</h2>
-    <table border="5">
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>MODX</td>
-          <td>Вывод карточек товара и тд</td>
-          <td>2024-2025</td>
-        </tr>
-        <tr>
-          <td>DHL</td>
-          <td>Доставщик почты, посылок</td>
+    <div class="card2">
+      <h2>Таблица</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MODX</td>
+            <td>Вывод карточек товара и тд</td>
+            <td>2024-2025</td>
+          </tr>
+          <tr>
+            <td>DHL</td>
+            <td>Доставщик почты, посылок</td>
 
-          <td>Full-2024</td>
-        </tr>
-        <tr>
-          <td>Стройка</td>
-          <td>Обычний робочий"Маляр"</td>
-          <td>2018-2025</td>
-        </tr>
-      </tbody>
-    </table>
+            <td>Full-2024</td>
+          </tr>
+          <tr>
+            <td>Стройка</td>
+            <td>Обычний робочий"Маляр"</td>
+            <td>2018-2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <hr />
-    <h1>Обратная связь</h1>
-    <form>
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Введите ваше имя" />
+    <form class="form">
+      <h1>Обратная связь</h1>
+      <div class="form1">
+        <div class="formRow">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Введите ваше имя" />
+        </div>
+
+        <div class="formRow">
+          <label for="name1">Email</label>
+          <input type="email" id="name1" placeholder="Введите ваш Email" />
+        </div>
       </div>
-      <br />
-      <div>
-        <label for="name1">Email</label>
-        <input type="email" id="name1" placeholder="Введите ваш Email" />
-      </div>
-      <br />
-      <div>
+
+      <div class="formRow">
         <label for="massege">Ваше сообщение</label>
         <br />
         <textarea
@@ -89,9 +107,11 @@
           rows="5"
         ></textarea>
       </div>
+
       <br />
+
       <div>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="btn">Отправить</button>
       </div>
     </form>
   </body>
